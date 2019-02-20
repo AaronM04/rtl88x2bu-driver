@@ -1034,7 +1034,7 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/i386/)
 ARCH ?= $(SUBARCH)
 CROSS_COMPILE ?=
 KVER  := $(shell uname -r)
-KSRC := /lib/modules/$(KVER)/build
+KSRC := /usr/src/kernel-headers-4.19.23_1/
 MODDESTDIR := /lib/modules/$(KVER)/kernel/drivers/net/wireless/
 INSTALL_PREFIX :=
 STAGINGMODDIR := /lib/modules/$(KVER)/kernel/drivers/staging
@@ -1067,7 +1067,7 @@ ARCH ?= arm
 
 CROSS_COMPILE ?=
 KVER := $(shell uname -r)
-KSRC := /lib/modules/$(KVER)/build
+KSRC := /usr/src/kernel-headers-4.19.23_1/
 MODDESTDIR := /lib/modules/$(KVER)/kernel/drivers/net/wireless/
 INSTALL_PREFIX :=
 endif
